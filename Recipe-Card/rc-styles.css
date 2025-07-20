@@ -28,8 +28,6 @@ main {
 main h1 {
   color: var(--primary-color);
 }
-.rc-image {
-}
 .rc-image img {
   width: 100%;
 }
