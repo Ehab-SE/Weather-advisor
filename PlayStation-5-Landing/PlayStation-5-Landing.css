@@ -107,8 +107,7 @@ main {
   background-color: var(--bg-light);
 }
 header {
-  background: #072377 url("/PlayStation-5-Landing/images/ps5back.png") no-repeat
-    right top;
+  background: #072377 url("images/ps5back.png") no-repeat right top;
   background-size: cover;
   height: 800px;
   display: flex;
