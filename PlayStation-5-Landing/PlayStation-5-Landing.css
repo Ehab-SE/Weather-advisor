@@ -102,7 +102,9 @@ video {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+sup {
+  text-underline-offset: -5px;
+}
 header {
   background: #072377 url("/PlayStation-5-Landing/images/ps5back.png") no-repeat
     right top;
