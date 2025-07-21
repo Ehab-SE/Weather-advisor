@@ -101,9 +101,10 @@ video {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-light);
 }
-sup {
-  text-underline-offset: -5px;
+main {
+  background-color: var(--bg-light);
 }
 header {
   background: #072377 url("/PlayStation-5-Landing/images/ps5back.png") no-repeat
@@ -184,9 +185,10 @@ main .new-features {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 50px;
 }
 main .new-features h2 {
-  margin-top: 150px;
+  margin-top: 50px;
   font-size: 3rem;
   text-align: center;
 }
@@ -195,9 +197,128 @@ main .new-features p {
   text-align: center;
 }
 
-main .new-features .features-image {
-  margin-top: 50px;
-}
 main .new-features .features-image img {
   width: 100%;
+}
+.chosing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 50px;
+}
+.chosing h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.chosing-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  margin: 50px;
+}
+
+.chosing-cards article {
+  background-color: var(--card-bg);
+
+  margin: 20px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 40px;
+}
+
+.chosing-cards article i {
+  color: aqua;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.chosing-cards article h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.chosing-cards article p {
+  margin: 20px 0;
+}
+
+.dualSense-controller {
+  display: flex;
+  align-items: space-between;
+  background-color: var(--card-bg);
+  color: var(--text-light);
+  padding: 50px;
+}
+
+.dualSense-controller article {
+  width: 50%;
+}
+
+.dualSense-controller article img {
+  width: 100%;
+}
+
+.dualsense-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.dualsense-info h2 {
+  font-size: 30px;
+}
+.dualsense-info p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.dualsense-info .btns {
+  background-color: var(--bg-light);
+  color: var(--sony-blue);
+  border: 5px var(--sony-blue) solid;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+.dualsense-info .btns:hover {
+  background-color: var(--sony-blue);
+  color: var(--text-light);
+  border: 5px var(--sony-blue) solid;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.pre-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--bg-light);
+  padding: 50px;
+  color: var(--text-dark);
+}
+.pre-order h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.pre-order p {
+  font-size: 16px;
+  color: #1f1f1f;
+  margin-top: 30px;
+}
+
+.pre-order .btns {
+  font-size: 16px;
+  background-color: var(--sony-blue);
+  color: var(--text-light);
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 50px;
+  font-size: 20px;
+  text-align: center;
 }
