@@ -247,10 +247,12 @@ main .new-features .features-image img {
   background-color: var(--card-bg);
   color: var(--text-light);
   padding: 50px;
+  flex-wrap: wrap;
 }
 
 .dualSense-controller article {
   width: 50%;
+  min-width: 300px;
 }
 
 .dualSense-controller article img {
