@@ -1,0 +1,265 @@
+/*---Stert css brawser defaults reset---*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*---end css brawser defaults reset---*/
+
+/*---root variables---*/
+
+:root {
+  --color-magenta: #ec4899;
+  --color-violet: #8b36fc;
+  --bg-color-dark: #0f172b;
+  --bg-color-card: #233044;
+  --color-text: #ffffff;
+  --color-gold: #dd6309;
+  --color-yellow: #fdc700;
+  --color-frame: #99a1af;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+body {
+  background-color: var(--bg-color-dark);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 900px;
+}
+nav {
+  background-color: var(--bg-color-darks);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: var(--color-magenta) 1px solid;
+}
+.left {
+  justify-content: start;
+  align-items: center;
+}
+.right {
+  justify-content: end;
+  align-items: center;
+}
+.logo-text {
+  padding-left: 10px;
+  align-items: start;
+  justify-content: center;
+}
+.logo-text .logix-word {
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo-text .gen-3 {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-gold);
+}
+.checkbtn,
+#check {
+  display: none;
+  font-size: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.pages ul {
+  list-style: none;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.pages ul li {
+  padding: 20px;
+  font-size: 18px;
+}
+.pages ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-text);
+}
+#vertical-list {
+  display: none;
+}
+.pages ul li a:hover {
+  color: var(--color-magenta);
+}
+
+.dot {
+  display: inline-block;
+  position: absolute;
+  width: 8.5px;
+  height: 8.5px;
+  background-color: var(--color-magenta);
+  border-radius: 50%;
+  right: -10px;
+  top: -10px;
+  animation-name: dot-opacity;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.button {
+  align-items: center;
+  justify-content: space-between;
+  border: 2px #ec489955 solid;
+  background-color: #ec489922;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.world,
+.br-flag,
+.en-lang,
+.dw-arrow {
+  padding: 0 5px;
+  width: 28px;
+  font-size: 13px;
+}
+
+.world,
+.dw-arrow {
+  color: var(--color-magenta);
+}
+
+@keyframes dot-opacity {
+  0% {
+    background-color: var(--color-magenta);
+  }
+  50% {
+    background-color: #ec489955;
+  }
+  100% {
+    background-color: var(--color-magenta);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right .button,
+  .right .pages {
+    display: none;
+  }
+  nav {
+    padding: 0 15%;
+  }
+
+  .checkbtn {
+    display: flex;
+    order: 1;
+  }
+  #vertical-list {
+    position: fixed;
+    top: 60px;
+    right: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    background-color: var(--color-magenta);
+  }
+  #vertical-list ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    background-color: var(--color-magenta);
+  }
+  .pages ul li {
+    padding: 5px 0;
+  }
+  .pages ul li a {
+    text-wrap: none;
+  }
+
+  .pages ul li a:hover {
+    color: var(--bg-color-dark);
+  }
+  @keyframes dot-opacity {
+    0% {
+      background-color: var(--bg-color-dark);
+    }
+    50% {
+      background-color: #888888;
+    }
+    100% {
+      background-color: var(--bg-color-dark);
+    }
+  }
+
+  #check:checked ~ #vertical-list {
+    right: 0px;
+  }
+}
