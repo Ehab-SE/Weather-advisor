@@ -57,7 +57,16 @@ const getAdvice = (heatCondition, weatherCondition) => {
       break;
 
     case "snowy":
-      return "<p>It's snowing!</p><p><strong> Recommendation:</strong> Wear a heavy winter coat, gloves, and a hat.<p>";
+      if (
+        heatCondition === "hot" ||
+        heatCondition === "normal" ||
+        heatCondition === "cold" ||
+        heatCondition === "snow"
+      ) {
+        return "<p>It's snowing!</p><p><strong> Recommendation:</strong> Wear a heavy winter coat, gloves, and a hat.<p>";
+      } else {
+        return "<p class='error'>Invalid temperature value</p>";
+      }
       break;
 
     default:
