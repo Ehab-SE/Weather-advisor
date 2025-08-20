@@ -1,0 +1,84 @@
+{
+  "quantity": {
+    "max": 5,
+    "min": 1,
+    "tick": 5,
+    "text": "Quantity",
+    "type": "slider",
+    "value": 2
+  },
+  "birdSize": {
+    "max": 400,
+    "min": 50,
+    "tick": 50,
+    "text": "Bird Size",
+    "type": "slider",
+    "value": 213
+  },
+  "wingSpan": {
+    "max": 40,
+    "min": 10,
+    "tick": 10,
+    "text": "Wing Span",
+    "type": "slider",
+    "value": 35
+  },
+  "speedLimit": {
+    "max": 10,
+    "min": 1,
+    "tick": 10,
+    "text": "Speed Limit",
+    "type": "slider",
+    "value": 5
+  },
+  "separation": {
+    "max": 100,
+    "min": 1,
+    "tick": 100,
+    "text": "Separation",
+    "type": "slider",
+    "value": 45
+  },
+  "alignment": {
+    "max": 100,
+    "min": 1,
+    "tick": 100,
+    "text": "Alignment",
+    "type": "slider",
+    "value": 1
+  },
+  "cohesion": {
+    "max": 100,
+    "min": 1,
+    "tick": 100,
+    "text": "Cohesion",
+    "type": "slider",
+    "value": 96
+  },
+  "backgroundColor": {
+    "text": "Background",
+    "type": "color",
+    "value": "#000000"
+  },
+  "color1": {
+    "text": "Color 1",
+    "type": "color",
+    "value": "#ff9966"
+  },
+  "color2": {
+    "text": "Color 2",
+    "type": "color",
+    "value": "#80FF80"
+  },
+  "colorMode": {
+    "text": "Color Mode",
+    "type": "dropdown",
+    "items": [
+      "lerp",
+      "variance",
+      "lerpGradient",
+      "varianceGradient"
+    ],
+    "value": 2
+  }
+}

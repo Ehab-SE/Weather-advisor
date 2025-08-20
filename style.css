@@ -108,7 +108,7 @@ body {
 
 header {
   width: 100%;
-  height: 900px;
+  height: 200px;
 }
 
 nav {
@@ -324,4 +324,69 @@ nav {
     transform: rotateX(0);
     animation-timing-function: ease-in-out;
   }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.my-challenges {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px
+}
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-width: 440px;
+  height: 100%;
+  border: 2px solid var(--color-magenta);
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.challenge h3 {
+  margin: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+iframe {
+  width: 90%;
+  height: 400px;
+  border-radius: 20px;
+}
+
+article a {
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: #ec4899;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
