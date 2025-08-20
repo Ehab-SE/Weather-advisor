@@ -14,7 +14,7 @@ const getAdvice = (heatCondition, weatherCondition) => {
   switch (weatherCondition) {
     case "sunny":
       if (heatCondition === "hot") {
-        return "<p>It's hot and sunny!</p><p><strong> Recommendation:</strong> Wear a t-shirt, shorts, and sunglasses.<p>";
+        return "<p>It's hot and sunny!</p> <p><strong> Recommendation:</strong> Wear a t-shirt, shorts, and sunglasses.<p>";
       } else if (heatCondition === "normal") {
         return "<p>A beautiful, sunny day.</p><p><strong> Recommendation:</strong>  A light shirt and pants/jeans are perfect.<p>";
       } else if (heatCondition === "cold" || heatCondition === "snow") {
@@ -70,7 +70,8 @@ const weatherConditionElement = document.getElementById("weather-condition");
 const getSubmitButton = document.getElementById("get-advice-btn");
 const adviceBodyElement = document.getElementById("advice-body");
 
-getSubmitButton.addEventListener("click", () => {
+getSubmitButton.addEventListener("click", (event) => {
+  event.preventDefault();
   const heatDegree = heatDegreeElement.value;
   const weatherCondition = weatherConditionElement.value;
 

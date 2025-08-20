@@ -265,9 +265,17 @@ header::after {
 
 .advice-body {
     width: 100%;
-    display: flex;
     box-sizing: border-box;
     border-left: 5px solid #4a2a1f;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
+    color: blue;
+}
+
+.advice-body p {
+    color: var(--white-color);
+}
+
+p.error {
+    color: red;
 }
