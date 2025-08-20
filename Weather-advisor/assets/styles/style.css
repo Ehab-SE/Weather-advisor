@@ -265,6 +265,12 @@ header::after {
     padding-top: 0;
 }
 
+.btn:hover {
+    background-color: orange;
+    border-color: orangered;
+    color: orangered;
+}
+
 .advice-body {
     font-size: 1rem;
     width: 100%;
